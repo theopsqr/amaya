@@ -5,6 +5,11 @@
  font-family: "Kaoly";
  src:  url("fonts/Kaoly.woff") format("woff");
 }
+  :root {
+  --red: #9E2729;
+  --green: #046245;
+  
+}
 html{
   scroll-behavior:smooth;
 }
@@ -32,7 +37,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #943537;
+  background-color: var(--red);
   color: #FFF;
   min-height: 50px;
   padding: 0 1em;
@@ -216,7 +221,7 @@ html, body {
 }
 .screen{
   width: 100%;
-  background-color: #305946;
+  background-color: var(--green);
   position: relative;
 }
 .screen1{
@@ -291,16 +296,17 @@ html, body {
   font-family: "Poppins";
   font-size: calc(10px + 1vh + 1.5vw);
   text-align:left;
-  text-decoration: underline;
   margin-bottom: 1.5vh;
   position: relative;
+  -webkit-text-stroke: 1px var(--red);
+  -webkit-text-fill-color: #04624580;
 }
 .subtitle:before{
   content:"";
   width:calc(10px + 1vh + 1.5vw);
   height: calc(10px + 1vh + 1.5vw);
   clip-path: polygon(100% 8%, 100% 0, 0% 0%, 0 100%, 8% 100%, 8% 8%);
-  background-color: #3174d250;
+  background-color: var(--red);
   position: absolute;
   left: -3%;
   top:-3%;
@@ -311,6 +317,7 @@ html, body {
   font-size: calc(5px + 1vh + .3vw);
   font-weight: 600;
   margin-top:0;
+  color: var(--green);
 }
 .img-bloc{
   background-image: url("img/test_photo.jpg");
@@ -321,7 +328,7 @@ html, body {
   width: calc(100px + 4vw + 10vh);
 }
 .screen3{
-  background-color: #8884FF;
+  background-color: aliceblue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,6 +339,8 @@ html, body {
   font-family: "Kaoly";
   font-size: calc(9px + 1.5vh + 5vw);
   margin:2vh;
+ -webkit-text-stroke: 1px var(--red);
+  -webkit-text-fill-color: #04624580;
 }
 
 .screen4{
@@ -367,7 +376,7 @@ html, body {
   height: 28%;
 }
 .box{
-  background-color: #3174d2;
+  background-color: var(--green);
   border-radius: 0.7em;
   isolation: isolate;
   position: relative;
@@ -381,7 +390,7 @@ html, body {
 .box:after{
   content: "";
   position: absolute;
-  background-color: #ff9dc5;
+  background-color: var(--red);
   inset: 0 0 0 0;
   transform: translateX(-100%);
   transition: all ease-in-out 700ms;
@@ -493,7 +502,7 @@ html, body {
 .input_container button{
   padding: 2vh 4.3vw 2vh 2vw;
   border:none;
-  background-color: #f06969;
+  background-color: var(--green);
   color:white;
   border-radius:0 5px 5px 0;
   cursor:pointer;
@@ -514,10 +523,8 @@ html, body {
   right: 12%;
 }
 .input_container button:hover{
-  background-color: #3174d2;
+  background-color: var(--red);
 }
-
-
 
 
 
@@ -556,22 +563,7 @@ html, body {
 }
 
 
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 
 
 
