@@ -243,7 +243,7 @@ html, body {
 }
 .box-title img{
   width:13%;
-  min-width: 70px;
+  min-width: 75px;
   cursor: pointer;
 }
 .title{
@@ -259,11 +259,12 @@ html, body {
   font-family: "Kaoly";
   font-size: calc(9px + 1.5vh + 1.75vw);
   margin-top:5vh;
-  letter-spacing:0em 
+  letter-spacing:0em;
+  margin-bottom: 1vh;
 }
 .arrow-container{
   position: absolute;
-  bottom:3%;
+  bottom:2%;
   -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
           animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
 }
@@ -320,12 +321,31 @@ html, body {
   color: var(--green);
 }
 .img-bloc{
-  background-image: url("img/test_photo.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100px + 4vw + 10vh);
   width: calc(100px + 4vw + 10vh);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 00px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.implantation{
+  background-image: url("img/implantation2.jpg");
+}
+.nuit{
+  background-image: url("img/nuit.jpg");
+}
+.girl_power{
+  background-image: url("img/girl_power.jpg");
+}
+.planete{
+  background-image: url("img/planete.jpg");
+}
+.driver{
+  background-image: url("img/driver.png");
+  box-shadow:none;
+}
+.commission{
+  background-image: url("img/test_photo.jpg");
 }
 .screen3{
   background-color: aliceblue;
@@ -471,9 +491,8 @@ html, body {
   margin-top:5vh;
 }
 .chauffeur_container .img-bloc{
-  background-image: url("img/test_photo.jpg");
-  background-position: center;
-  background-size: 75% ;
+  background-position: top;
+  background-size: 70% ;
   background-repeat: no-repeat;
   width: 50%;
 }
