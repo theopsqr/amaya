@@ -36,12 +36,13 @@ html, body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: var(--red);
   color: #FFF;
   min-height: 50px;
   padding: 0 1em;
   height:10vh;
+  position: relative;
 }
 
 .menu {
@@ -51,7 +52,14 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
+.logo{
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    left: 2%;
+    filter: brightness(100);
+}
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
